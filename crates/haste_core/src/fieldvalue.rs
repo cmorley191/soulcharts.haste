@@ -6,7 +6,7 @@
 //
 // NOTE: Clone derive is needed here because Entity in entities.rs needs to be
 // clonable which means that all members of it also should be clonable.
-#[derive(Clone)]
+#[derive(Clone, PartialEq)]
 pub enum FieldValue {
     I64(i64),
     U64(u64),

@@ -194,6 +194,10 @@ impl DeltaHeader {
         br.read_bits(&mut buf, 2);
         Self(buf[0])
     }
+
+    pub fn value(self) -> u8 {
+        self.0
+    }
 }
 
 #[derive(Debug, Clone)]
